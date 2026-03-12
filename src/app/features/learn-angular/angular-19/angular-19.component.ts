@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { MaterialModule } from '../../../shared/material/material.module';
 
 @Component({
-  selector: 'app-directive',
+  selector: 'app-angular-19',
   imports: [MaterialModule],
-  templateUrl: './directive.component.html',
-  styleUrl: './directive.component.scss'
+  templateUrl: './angular-19.component.html',
+  styleUrl: './angular-19.component.scss'
 })
-export class DirectiveComponent {
+export class Angular19Component {
 
 }

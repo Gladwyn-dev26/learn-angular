@@ -1,0 +1,48 @@
+.page {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px;
+}
+
+.hero-card {
+  padding: 30px;
+  margin-bottom: 20px;
+
+  h1 {
+    font-size: 34px;
+  }
+
+  p {
+    color: #555;
+    font-size: 17px;
+  }
+}
+
+.section-card {
+  padding: 24px;
+  margin-bottom: 20px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin-top: 12px;
+    line-height: 1.6;
+  }
+}
+
+.features {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+pre {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+}

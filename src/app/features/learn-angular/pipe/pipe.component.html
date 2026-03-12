@@ -1,1 +1,115 @@
-<p>pipe works!</p>
+<h2>Angular Pipes</h2>
+
+<div class="page">
+
+  <!-- Hero -->
+  <mat-card class="hero-card">
+    <h1>Pipes in Angular</h1>
+    <p>
+      Pipes are used to transform data in Angular templates. 
+      They help format values like dates, currency, numbers, and text 
+      before displaying them in the UI.
+    </p>
+  </mat-card>
+
+  <!-- What is Pipe -->
+  <mat-card class="section-card">
+
+    <h2>What is a Pipe?</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      A pipe takes input data and transforms it into a desired format
+      directly inside the template.
+    </p>
+
+<pre><code>
+&#123;&#123; username | uppercase &#125;&#125;
+</code></pre>
+
+  </mat-card>
+
+  <!-- Built-in Pipes -->
+  <mat-card class="section-card">
+
+    <h2>Built-in Pipes</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="features">
+
+      <mat-chip color="primary" selected>uppercase</mat-chip>
+      <mat-chip color="primary" selected>lowercase</mat-chip>
+      <mat-chip color="primary" selected>date</mat-chip>
+      <mat-chip color="primary" selected>currency</mat-chip>
+      <mat-chip color="primary" selected>percent</mat-chip>
+      <mat-chip color="primary" selected>json</mat-chip>
+
+    </div>
+
+  </mat-card>
+
+  <!-- Pipe Example -->
+  <mat-card class="section-card">
+
+    <h2>Pipe Example</h2>
+
+    <mat-divider></mat-divider>
+
+<pre><code>
+&#123;&#123; today | date:'fullDate' &#125;&#125;
+
+&#123;&#123; price | currency:'USD' &#125;&#125;
+
+&#123;&#123; name | uppercase &#125;&#125;
+</code></pre>
+
+  </mat-card>
+
+  <!-- Custom Pipe -->
+  <mat-card class="section-card">
+
+    <h2>Custom Pipe</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      Developers can create custom pipes to transform data based on application needs.
+    </p>
+
+<pre><code>
+&#64;Pipe(&#123;
+ name: 'capitalize'
+&#125;)
+
+export class CapitalizePipe implements PipeTransform &#123;
+
+ transform(value: string) &#123;
+   return value.charAt(0).toUpperCase() + value.slice(1);
+ &#125;
+
+&#125;
+</code></pre>
+
+  </mat-card>
+
+  <!-- Why Pipes -->
+  <mat-card class="section-card">
+
+    <h2>Why Pipes?</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="features">
+
+      <mat-chip selected>Clean Templates</mat-chip>
+      <mat-chip selected>Reusable Logic</mat-chip>
+      <mat-chip selected>Better Data Formatting</mat-chip>
+      <mat-chip selected>Improves Readability</mat-chip>
+
+    </div>
+
+  </mat-card>
+
+</div>

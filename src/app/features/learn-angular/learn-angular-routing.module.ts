@@ -14,11 +14,13 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { RoutingComponent } from './routing/routing.component';
 import { ServiceComponent } from './service/service.component';
 import { LearnAngularComponent } from './learn-angular/learn-angular.component';
+import { Angular19Component } from './angular-19/angular-19.component';
 const routes: Routes = [
  {
     path: '',
     component: LearnAngularComponent,
     children: [
+            { path: 'angular', component: Angular19Component },
       { path: 'change-detection', component: ChangeDetectionComponent },
       { path: 'component', component: ComponentComponent },
       { path: 'di', component: DiComponent },

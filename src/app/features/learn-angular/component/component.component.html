@@ -1,10 +1,118 @@
-<div class="component-card">
-  <h2>Angular Component</h2>
+<div class="page">
 
-  <p>
-    A Component is the main building block of Angular applications.
-    It controls a part of the UI and contains template, styles, and business logic.
-  </p>
+  <!-- Title -->
+  <mat-card class="hero-card">
+    <h1>Angular Component</h1>
+    <p>
+      A Component is the fundamental building block of an Angular application.
+      It controls a part of the user interface and contains template, styles,
+      and business logic.
+    </p>
+  </mat-card>
+
+  <!-- What is Component -->
+  <mat-card class="section-card">
+    <h2>1. What is a Component?</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      A component defines a portion of the UI and controls how the view behaves.
+      Angular applications are built using a tree of components.
+    </p>
+
+    <div class="tree">
+      AppComponent<br>
+      ├ HeaderComponent<br>
+      ├ SidebarComponent<br>
+      └ DashboardComponent
+    </div>
+
+  </mat-card>
+
+  <!-- Why Components -->
+  <mat-card class="section-card">
+
+    <h2>2. Why We Use Components</h2>
+
+    <mat-divider></mat-divider>
+
+    <mat-chip-set>
+
+      <mat-chip>Reusability</mat-chip>
+      <mat-chip>Maintainability</mat-chip>
+      <mat-chip>Scalability</mat-chip>
+      <mat-chip>Separation of Concerns</mat-chip>
+
+    </mat-chip-set>
+
+  </mat-card>
+
+  <!-- How Components Work -->
+  <mat-card class="section-card">
+
+    <h2>3. How Components Work</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="flow">
+
+      <mat-chip>User Action</mat-chip>
+      <mat-icon>arrow_forward</mat-icon>
+
+      <mat-chip>Component Logic</mat-chip>
+      <mat-icon>arrow_forward</mat-icon>
+
+      <mat-chip>State Change</mat-chip>
+      <mat-icon>arrow_forward</mat-icon>
+
+      <mat-chip>Change Detection</mat-chip>
+      <mat-icon>arrow_forward</mat-icon>
+
+      <mat-chip>DOM Update</mat-chip>
+
+    </div>
+
+  </mat-card>
+
+  <!-- Syntax -->
+  <mat-card class="section-card">
+
+    <h2>4. Component Syntax</h2>
+
+    <mat-divider></mat-divider>
+
+<pre><code>
+&#64;Component(&#123;
+ selector: 'app-user',
+ templateUrl: './user.component.html',
+ styleUrls: ['./user.component.scss']
+&#125;)
+export class UserComponent &#123;&#125;
+</code></pre>
+
+  </mat-card>
+
+  <!-- Standalone Component -->
+  <mat-card class="section-card">
+
+    <h2>5. Standalone Components (Angular 19)</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      Standalone components remove the need for NgModules and simplify Angular architecture.
+    </p>
+
+<pre><code>
+&#64;Component(&#123;
+ selector: 'app-user',
+ standalone: true,
+ templateUrl: './user.component.html'
+&#125;)
+export class UserComponent &#123;&#125;
+</code></pre>
+
+  </mat-card>
+
 </div>
-<h2>Learn Angular Page</h2>
-<h1 style="color:red">HELLO COMPONENT</h1>

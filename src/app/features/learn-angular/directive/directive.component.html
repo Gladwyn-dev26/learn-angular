@@ -1,1 +1,110 @@
-<p>directive works!</p>
+<h2>Angular Directives</h2>
+
+<div class="page">
+
+  <!-- Hero -->
+  <mat-card class="hero-card">
+    <h1>Directives in Angular</h1>
+    <p>
+      Directives are classes that modify the behavior or appearance of DOM elements.
+      They allow developers to extend HTML with custom behavior.
+    </p>
+  </mat-card>
+
+  <!-- What is Directive -->
+  <mat-card class="section-card">
+
+    <h2>What is a Directive?</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      A Directive is a TypeScript class that adds behavior to elements in the DOM.
+      Angular uses directives to manipulate the DOM and control UI behavior.
+    </p>
+
+  </mat-card>
+
+  <!-- Types of Directives -->
+  <mat-card class="section-card">
+
+    <h2>Types of Directives</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="features">
+
+      <mat-chip color="primary" selected>
+        Component Directive
+      </mat-chip>
+
+      <mat-chip color="accent" selected>
+        Structural Directive
+      </mat-chip>
+
+      <mat-chip color="warn" selected>
+        Attribute Directive
+      </mat-chip>
+
+    </div>
+
+  </mat-card>
+
+  <!-- Structural Directive -->
+  <mat-card class="section-card">
+
+    <h2>Structural Directives</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      Structural directives change the structure of the DOM by adding or removing elements.
+    </p>
+
+    <div class="example">
+      *ngIf &nbsp; *ngFor &nbsp; *ngSwitch
+    </div>
+
+  </mat-card>
+
+  <!-- Attribute Directive -->
+  <mat-card class="section-card">
+
+    <h2>Attribute Directives</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      Attribute directives change the appearance or behavior of an element.
+    </p>
+
+    <div class="example">
+      ngClass &nbsp; ngStyle
+    </div>
+
+  </mat-card>
+
+  <!-- Directive Syntax -->
+  <mat-card class="section-card">
+
+    <h2>Custom Directive Syntax</h2>
+
+    <mat-divider></mat-divider>
+
+<pre><code>
+&#64;Directive(&#123;
+ selector: '[appHighlight]'
+&#125;)
+
+export class HighlightDirective &#123;
+
+ constructor(private el: ElementRef) &#123;
+   this.el.nativeElement.style.backgroundColor = 'yellow';
+ &#125;
+
+&#125;
+</code></pre>
+
+  </mat-card>
+
+</div>
