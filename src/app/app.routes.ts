@@ -1,20 +1,16 @@
 import { Routes } from '@angular/router';
-
 export const routes: Routes = [
+  { path: '', redirectTo: 'learn-angular', pathMatch: 'full' },
+
   {
-    path: '',
-    redirectTo: 'learn',
-    pathMatch: 'full'
-  },
-  {
-    path: 'learn',
-    loadComponent: () =>
-      import('./features/learn-angular/learn-angular-routing.module')
-        .then(m => m.LearnAngularRoutingModule)
+    path: 'learn-angular',
+    loadChildren: () =>
+      import('./features/learn-angular/learn-angular.module')
+        .then(m => m.LearnAngularModule)
   },
   {
     path: 'architecture',
-    loadComponent: () =>
+    loadChildren: () =>
       import('./features/architecture/architecture-routing.module')
         .then(m => m.ArchitectureRoutingModule)
   },

@@ -13,22 +13,28 @@ import { PipeComponent } from './pipe/pipe.component';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
 import { RoutingComponent } from './routing/routing.component';
 import { ServiceComponent } from './service/service.component';
-
+import { LearnAngularComponent } from './learn-angular/learn-angular.component';
 const routes: Routes = [
-  { path: 'change-detection', component: ChangeDetectionComponent },
-  { path: 'component', component: ComponentComponent },
-  { path: 'di', component: DiComponent },
-  { path: 'directive', component: DirectiveComponent },
-  { path: 'guard', component: GuardComponent },
-  { path: 'httpclient', component: HttpclientComponent },
-  { path: 'interceptors', component: InterceptorsComponent },
-  { path: 'lazy-loading', component: LazyLoadingComponent },
-  { path: 'lifecycle-hooks', component: LifecycleHooksComponent },
-  { path: 'pipe', component: PipeComponent },
-  { path: 'reactive-form', component: ReactiveFormComponent },
-  { path: 'routing', component: RoutingComponent },
-  { path: 'service', component: ServiceComponent },
-];
+ {
+    path: '',
+    component: LearnAngularComponent,
+    children: [
+      { path: 'change-detection', component: ChangeDetectionComponent },
+      { path: 'component', component: ComponentComponent },
+      { path: 'di', component: DiComponent },
+      { path: 'directive', component: DirectiveComponent },
+      { path: 'guard', component: GuardComponent },
+      { path: 'httpclient', component: HttpclientComponent },
+      { path: 'interceptors', component: InterceptorsComponent },
+      { path: 'lazy-loading', component: LazyLoadingComponent },
+      { path: 'lifecycle-hooks', component: LifecycleHooksComponent },
+      { path: 'pipe', component: PipeComponent },
+      { path: 'reactive-form', component: ReactiveFormComponent },
+      { path: 'routing', component: RoutingComponent },
+      { path: 'service', component: ServiceComponent }
+    ]
+  }
+]
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
