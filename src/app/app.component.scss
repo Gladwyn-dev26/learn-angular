@@ -1,0 +1,17 @@
+.layout {
+  display: flex;
+  height: calc(100vh - 96px); /* subtract header + footer height */
+}
+
+app-sidebar {
+  width: 250px;
+  background-color: #f4f4f4;
+  border-right: 1px solid #ddd;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #fafafa;
+}

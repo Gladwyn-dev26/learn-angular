@@ -1,0 +1,20 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav mode="side" opened class="sidenav">
+    <mat-nav-list>
+      <a mat-list-item routerLink="/learn-angular/components">Components</a>
+      <a mat-list-item routerLink="/learn-angular/directives">Directives</a>
+      <a mat-list-item routerLink="/learn-angular/pipes">Pipes</a>
+      <a mat-list-item routerLink="/learn-angular/forms">Forms</a>
+      <a mat-list-item routerLink="/learn-angular/dependency-injection">Dependency Injection</a>
+      <a mat-list-item routerLink="/learn-angular/change-detection">Change Detection</a>
+      <a mat-list-item routerLink="/practice">Practice</a>
+      <a mat-list-item routerLink="/architecture">Architecture</a>
+      <a mat-list-item routerLink="/interview-questions">Interview Qs</a>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <!-- Routed content will appear here -->
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
