@@ -1,41 +1,28 @@
 <mat-sidenav-container class="sidenav-container">
 
-  <!-- Sidebar -->
   <mat-sidenav mode="side" opened class="sidenav">
 
+    <mat-nav-list>
 
-      <mat-nav-list>
-            <a mat-list-item routerLink="/learn-angular/angular">Angular 19 New</a>
-      <a mat-list-item routerLink="/learn-angular/component">Components</a>
-      <a mat-list-item routerLink="/learn-angular/directive">Directives</a>
-      <a mat-list-item routerLink="/learn-angular/pipe">Pipes</a>
-      <a mat-list-item routerLink="/learn-angular/reactive-form">Forms</a>
-      <a mat-list-item routerLink="/learn-angular/di">Dependency Injection</a>
-      <a mat-list-item routerLink="/learn-angular/change-detection">Change Detection</a>
-      <a mat-list-item routerLink="/learn-angular/routing">Routing</a>
-      <a mat-list-item routerLink="/learn-angular/service">Services</a>
-      <a mat-list-item routerLink="/learn-angular/guard">Guards</a>
-      <a mat-list-item routerLink="/learn-angular/httpclient">HttpClient</a>
-      <a mat-list-item routerLink="/learn-angular/interceptors">Interceptors</a>
-      <a mat-list-item routerLink="/learn-angular/lazy-loading">Lazy Loading</a>
-      <a mat-list-item routerLink="/learn-angular/lifecycle-hooks">Lifecycle Hooks</a>
+      <h3 mat-subheader>{{ selectedMenu?.name }}</h3>
+
+      <a mat-list-item
+         *ngFor="let item of selectedMenu?.items"
+         [routerLink]="item.link">
+
+        {{ item.name }}
+
+      </a>
+
     </mat-nav-list>
 
   </mat-sidenav>
 
 
-
-
-
-
-
-  <!-- Page Content -->
   <mat-sidenav-content>
-
     <div class="content">
       <router-outlet></router-outlet>
     </div>
-
   </mat-sidenav-content>
 
 </mat-sidenav-container>

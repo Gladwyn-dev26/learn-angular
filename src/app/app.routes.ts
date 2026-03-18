@@ -11,8 +11,8 @@ export const routes: Routes = [
   {
     path: 'architecture',
     loadChildren: () =>
-      import('./features/architecture/architecture-routing.module')
-        .then(m => m.ArchitectureRoutingModule)
+      import('./features/architecture/architecture.module')
+        .then(m => m.ArchitectureModule)
   },
   {
     path: 'practice',

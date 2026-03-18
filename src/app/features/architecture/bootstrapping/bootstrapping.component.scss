@@ -1,0 +1,27 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hero-card {
+  background: #f5f5f5;
+}
+
+.section-card {
+  padding: 16px;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+pre {
+  background: #1e1e1e;
+  color: #eee;
+  padding: 16px;
+  border-radius: 5px;
+  overflow-x: auto;
+}

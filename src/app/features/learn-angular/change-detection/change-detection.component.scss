@@ -1,0 +1,59 @@
+/* Variables */
+$card-space: 25px;
+$code-bg: #1e1e1e;
+$code-text: #e6e6e6;
+
+/* Page Layout */
+.page {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+
+  @media (max-width: 768px) {
+    padding: 10px;
+  }
+}
+
+/* Hero Card */
+.hero-card {
+  margin-bottom: $card-space;
+  padding: 20px;
+
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* Section Card */
+.section-card {
+  margin-bottom: $card-space;
+  padding: 20px;
+
+  h2 {
+    margin-bottom: 10px;
+  }
+}
+
+/* Feature Chips */
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Code Block */
+pre {
+  background: $code-bg;
+  color: $code-text;
+  padding: 15px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  code {
+    font-family: "Courier New", monospace;
+  }
+}

@@ -1,1 +1,85 @@
-<p>bootstrapping works!</p>
+<h2>Angular Bootstrapping</h2>
+
+<div class="page">
+
+  <!-- Hero Section -->
+  <mat-card class="hero-card">
+
+    <h1>Angular Application Bootstrapping</h1>
+
+    <p>
+      Bootstrapping is the process where Angular starts the application
+      and loads the root component into the browser.
+    </p>
+
+  </mat-card>
+
+
+  <!-- Bootstrapping Steps -->
+  <mat-card class="section-card">
+
+    <h2>Bootstrapping Steps</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="features">
+
+      <mat-chip selected>Browser loads index.html</mat-chip>
+      <mat-chip selected>main.ts starts execution</mat-chip>
+      <mat-chip selected>Angular initializes platform</mat-chip>
+      <mat-chip selected>AppComponent is bootstrapped</mat-chip>
+      <mat-chip selected>Application UI renders</mat-chip>
+
+    </div>
+
+  </mat-card>
+
+
+  <!-- Bootstrapping Code -->
+  <mat-card class="section-card">
+
+    <h2>main.ts Example</h2>
+
+    <mat-divider></mat-divider>
+
+    <pre [textContent]="bootstrapExample"></pre>
+
+  </mat-card>
+
+
+  <!-- Bootstrapping Flow -->
+  <mat-card class="section-card">
+
+    <h2>Application Startup Flow</h2>
+
+    <mat-divider></mat-divider>
+
+    <pre [textContent]="flowExample"></pre>
+
+  </mat-card>
+
+
+  <!-- Explanation -->
+  <mat-card class="section-card">
+
+    <h2>Key Concepts</h2>
+
+    <mat-divider></mat-divider>
+
+    <ul>
+
+      <li><b>index.html</b> → Root HTML file loaded by the browser</li>
+
+      <li><b>main.ts</b> → Entry point of the Angular application</li>
+
+      <li><b>bootstrapApplication()</b> → Starts the Angular app</li>
+
+      <li><b>AppComponent</b> → Root component that renders UI</li>
+
+      <li><b>Angular Platform</b> → Initializes dependency injection and change detection</li>
+
+    </ul>
+
+  </mat-card>
+
+</div>

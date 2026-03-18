@@ -1,1 +1,94 @@
-<p>di works!</p>
+<h2>Angular Dependency Injection</h2>
+
+<div class="page">
+
+  <!-- Hero -->
+  <mat-card class="hero-card">
+    <h1>Dependency Injection (DI)</h1>
+
+    <p>
+      Dependency Injection is a design pattern in Angular used to
+      provide services to components instead of creating them manually.
+    </p>
+  </mat-card>
+
+  <!-- What is DI -->
+  <mat-card class="section-card">
+
+    <h2>What is Dependency Injection?</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      Angular automatically creates and injects services
+      into components using its dependency injection system.
+    </p>
+
+<pre><code>
+constructor(private userService: UserService) &#123;&#125;
+</code></pre>
+
+  </mat-card>
+
+  <!-- Why DI -->
+  <mat-card class="section-card">
+
+    <h2>Why Dependency Injection?</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="features">
+
+      <mat-chip selected>Loose Coupling</mat-chip>
+      <mat-chip selected>Reusable Services</mat-chip>
+      <mat-chip selected>Easy Testing</mat-chip>
+      <mat-chip selected>Better Maintainability</mat-chip>
+
+    </div>
+
+  </mat-card>
+
+  <!-- Service Example -->
+  <mat-card class="section-card">
+
+    <h2>Service Example</h2>
+
+    <mat-divider></mat-divider>
+
+<pre><code>
+import &#123; Injectable &#125; from '&#64;angular/core';
+
+&#64;Injectable(&#123;
+  providedIn: 'root'
+&#125;)
+export class UserService &#123;
+
+  getUsers() &#123;
+    return ['John', 'David', 'Sara'];
+  &#125;
+
+&#125;
+</code></pre>
+
+  </mat-card>
+
+  <!-- Injecting Service -->
+  <mat-card class="section-card">
+
+    <h2>Injecting Service into Component</h2>
+
+    <mat-divider></mat-divider>
+
+<pre><code>
+constructor(private userService: UserService) &#123;
+
+  const users = this.userService.getUsers();
+
+  console.log(users);
+
+&#125;
+</code></pre>
+
+  </mat-card>
+
+</div>

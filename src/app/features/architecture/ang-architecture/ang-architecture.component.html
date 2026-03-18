@@ -1,0 +1,75 @@
+<h2>Angular Architecture</h2>
+
+<div class="page">
+
+  <!-- Hero -->
+  <mat-card class="hero-card">
+    <h1>Angular Application Architecture</h1>
+
+    <p>
+      Angular applications follow a structured architecture
+      that separates UI, business logic, and data handling.
+    </p>
+  </mat-card>
+
+
+  <!-- Core Building Blocks -->
+  <mat-card class="section-card">
+
+    <h2>Core Building Blocks</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="features">
+      <mat-chip selected>Components</mat-chip>
+      <mat-chip selected>Templates</mat-chip>
+      <mat-chip selected>Services</mat-chip>
+      <mat-chip selected>Modules / Features</mat-chip>
+      <mat-chip selected>Routing</mat-chip>
+      <mat-chip selected>Dependency Injection</mat-chip>
+    </div>
+
+  </mat-card>
+
+
+  <!-- Folder Structure -->
+  <mat-card class="section-card">
+
+    <h2>Typical Angular Folder Structure</h2>
+
+    <mat-divider></mat-divider>
+
+    <pre [textContent]="structureExample"></pre>
+
+  </mat-card>
+
+
+  <!-- Data Flow -->
+  <mat-card class="section-card">
+
+    <h2>Application Data Flow</h2>
+
+    <mat-divider></mat-divider>
+
+    <pre [textContent]="flowExample"></pre>
+
+  </mat-card>
+
+
+  <!-- Explanation -->
+  <mat-card class="section-card">
+
+    <h2>Architecture Layers</h2>
+
+    <mat-divider></mat-divider>
+
+    <ul>
+      <li><b>Component</b> → Handles UI</li>
+      <li><b>Service</b> → Contains business logic</li>
+      <li><b>HttpClient</b> → Communicates with backend</li>
+      <li><b>Routing</b> → Handles navigation</li>
+    </ul>
+
+  </mat-card>
+
+</div>

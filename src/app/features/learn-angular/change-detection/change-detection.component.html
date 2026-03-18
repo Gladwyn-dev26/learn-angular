@@ -1,1 +1,100 @@
-<p>change-detection works!</p>
+<h2>Angular Change Detection</h2>
+
+<div class="page">
+
+  <!-- Hero -->
+  <mat-card class="hero-card">
+    <h1>Change Detection</h1>
+    <p>
+      Change Detection is the mechanism Angular uses to update the UI
+      whenever application data changes.
+    </p>
+  </mat-card>
+
+  <!-- What is Change Detection -->
+  <mat-card class="section-card">
+
+    <h2>What is Change Detection?</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      Angular automatically checks component data and updates the DOM
+      whenever a value changes.
+    </p>
+
+<pre ngNonBindable>
+&#123;&#123; username &#125;&#125;
+</pre>
+
+  </mat-card>
+
+  <!-- How it Works -->
+  <mat-card class="section-card">
+
+    <h2>How Change Detection Works</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>Angular runs change detection when:</p>
+
+    <div class="features">
+      <mat-chip selected>Button Click</mat-chip>
+      <mat-chip selected>HTTP Response</mat-chip>
+      <mat-chip selected>Timer / setTimeout</mat-chip>
+      <mat-chip selected>User Input</mat-chip>
+    </div>
+
+  </mat-card>
+
+  <!-- Default Strategy -->
+  <mat-card class="section-card">
+
+    <h2>Default Change Detection</h2>
+
+    <mat-divider></mat-divider>
+
+<pre ngNonBindable>
+import &#123; Component &#125; from '&#64;angular/core';
+
+&#64;Component(&#123;
+  selector: 'app-user',
+  templateUrl: './user.component.html'
+&#125;)
+
+export class UserComponent &#123;
+  name = 'John';
+&#125;
+</pre>
+
+  </mat-card>
+
+  <!-- OnPush -->
+  <mat-card class="section-card">
+
+    <h2>OnPush Change Detection</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      OnPush improves performance by checking changes only
+      when input reference changes.
+    </p>
+
+<pre ngNonBindable>
+import &#123; ChangeDetectionStrategy, Component &#125; from '&#64;angular/core';
+
+&#64;Component(&#123;
+  selector: 'app-user',
+  changeDetection: ChangeDetectionStrategy.OnPush,
+  template: '&#123;&#123; name &#125;&#125;'
+&#125;)
+
+export class UserComponent &#123;
+  name = 'John';
+&#125;
+</pre>
+
+  </mat-card>
+
+</div>

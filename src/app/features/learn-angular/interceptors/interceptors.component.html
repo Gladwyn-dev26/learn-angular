@@ -1,1 +1,67 @@
-<p>interceptors works!</p>
+<h2>Angular HTTP Interceptor</h2>
+
+<div class="page">
+
+  <!-- Hero -->
+  <mat-card class="hero-card">
+    <h1>HTTP Interceptor</h1>
+
+    <p>
+      Interceptors allow you to modify HTTP requests or responses
+      before they reach the server or the application.
+    </p>
+  </mat-card>
+
+  <!-- What is Interceptor -->
+  <mat-card class="section-card">
+
+    <h2>What is an Interceptor?</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      Interceptors are used for tasks like adding authentication tokens,
+      logging requests, or handling errors globally.
+    </p>
+
+  </mat-card>
+
+  <!-- Uses -->
+  <mat-card class="section-card">
+
+    <h2>Common Uses</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="features">
+      <mat-chip selected>Add Auth Token</mat-chip>
+      <mat-chip selected>Logging Requests</mat-chip>
+      <mat-chip selected>Error Handling</mat-chip>
+      <mat-chip selected>Modify Headers</mat-chip>
+    </div>
+
+  </mat-card>
+
+  <!-- Interceptor Code -->
+  <mat-card class="section-card">
+
+    <h2>Interceptor Example</h2>
+
+    <mat-divider></mat-divider>
+
+    <pre [textContent]="interceptorExample"></pre>
+
+  </mat-card>
+
+  <!-- Register -->
+  <mat-card class="section-card">
+
+    <h2>Register Interceptor</h2>
+
+    <mat-divider></mat-divider>
+
+    <pre [textContent]="registerExample"></pre>
+
+  </mat-card>
+
+</div>

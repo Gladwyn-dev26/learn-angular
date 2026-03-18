@@ -23,8 +23,9 @@ import { MatChipsModule } from '@angular/material/chips';
     MatListModule,
     MatCardModule,
     MatInputModule,
-    MatFormFieldModule
-
+    MatFormFieldModule,
+    MatDividerModule,
+    MatChipsModule
   ],
   exports: [
     MatToolbarModule,
@@ -35,7 +36,6 @@ import { MatChipsModule } from '@angular/material/chips';
     MatCardModule,
     MatInputModule,
     MatFormFieldModule,
-    MatCardModule,
     MatDividerModule,
     MatChipsModule
   ]

@@ -1,0 +1,27 @@
+.page{
+  max-width:900px;
+  margin:auto;
+  padding:20px;
+}
+
+.hero-card{
+  margin-bottom:25px;
+}
+
+.section-card{
+  margin-bottom:25px;
+}
+
+.features{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+pre{
+  background:#1e1e1e;
+  color:#e6e6e6;
+  padding:15px;
+  border-radius:8px;
+  overflow-x:auto;
+}

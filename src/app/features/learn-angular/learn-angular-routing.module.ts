@@ -18,7 +18,7 @@ import { Angular19Component } from './angular-19/angular-19.component';
 const routes: Routes = [
  {
     path: '',
-    component: LearnAngularComponent,
+    component: Angular19Component,
     children: [
             { path: 'angular', component: Angular19Component },
       { path: 'change-detection', component: ChangeDetectionComponent },

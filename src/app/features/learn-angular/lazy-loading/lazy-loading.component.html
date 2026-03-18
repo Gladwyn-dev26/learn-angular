@@ -1,1 +1,71 @@
-<p>lazy-loading works!</p>
+<h2>Angular Lazy Loading</h2>
+
+<div class="page">
+
+  <!-- Hero -->
+  <mat-card class="hero-card">
+    <h1>Lazy Loading</h1>
+
+    <p>
+      Lazy Loading loads feature modules only when the user
+      navigates to that route. This improves application performance.
+    </p>
+  </mat-card>
+
+
+  <!-- What is Lazy Loading -->
+  <mat-card class="section-card">
+
+    <h2>What is Lazy Loading?</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      Instead of loading the entire application at startup,
+      Angular loads modules only when needed.
+    </p>
+
+  </mat-card>
+
+
+  <!-- Benefits -->
+  <mat-card class="section-card">
+
+    <h2>Benefits of Lazy Loading</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="features">
+      <mat-chip selected>Faster App Load</mat-chip>
+      <mat-chip selected>Better Performance</mat-chip>
+      <mat-chip selected>Smaller Bundle Size</mat-chip>
+      <mat-chip selected>Scalable Architecture</mat-chip>
+    </div>
+
+  </mat-card>
+
+
+  <!-- Route Config -->
+  <mat-card class="section-card">
+
+    <h2>Lazy Route Configuration</h2>
+
+    <mat-divider></mat-divider>
+
+    <pre [textContent]="routeExample"></pre>
+
+  </mat-card>
+
+
+  <!-- Feature Routes -->
+  <mat-card class="section-card">
+
+    <h2>Feature Route File</h2>
+
+    <mat-divider></mat-divider>
+
+    <pre [textContent]="featureRoutesExample"></pre>
+
+  </mat-card>
+
+</div>

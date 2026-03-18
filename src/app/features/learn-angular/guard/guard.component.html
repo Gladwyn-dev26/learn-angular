@@ -1,1 +1,67 @@
-<p>guard works!</p>
+<h2>Angular Route Guards</h2>
+
+<div class="page">
+
+  <!-- Hero -->
+  <mat-card class="hero-card">
+    <h1>Route Guards</h1>
+
+    <p>
+      Route Guards control access to routes in an Angular application.
+      They decide whether navigation to a route is allowed or not.
+    </p>
+  </mat-card>
+
+  <!-- What is Guard -->
+  <mat-card class="section-card">
+
+    <h2>What is a Route Guard?</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      Guards are used to protect routes. They check conditions before
+      navigating to a component.
+    </p>
+
+  </mat-card>
+
+  <!-- Types of Guards -->
+  <mat-card class="section-card">
+
+    <h2>Types of Guards</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="features">
+      <mat-chip selected>CanActivate</mat-chip>
+      <mat-chip selected>CanDeactivate</mat-chip>
+      <mat-chip selected>CanLoad</mat-chip>
+      <mat-chip selected>Resolve</mat-chip>
+    </div>
+
+  </mat-card>
+
+  <!-- Guard Example -->
+  <mat-card class="section-card">
+
+    <h2>CanActivate Guard Example</h2>
+
+    <mat-divider></mat-divider>
+
+    <pre [textContent]="guardExample"></pre>
+
+  </mat-card>
+
+  <!-- Using Guard in Routing -->
+  <mat-card class="section-card">
+
+    <h2>Using Guard in Routes</h2>
+
+    <mat-divider></mat-divider>
+
+    <pre [textContent]="routeExample"></pre>
+
+  </mat-card>
+
+</div>

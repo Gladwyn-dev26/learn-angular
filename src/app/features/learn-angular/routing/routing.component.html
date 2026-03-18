@@ -1,1 +1,70 @@
-<p>routing works!</p>
+<h2>Angular Routing</h2>
+
+<div class="page">
+
+  <!-- Hero -->
+  <mat-card class="hero-card">
+    <h1>Angular Routing</h1>
+    <p>
+      Angular Routing allows navigation between different components
+      without reloading the page.
+    </p>
+  </mat-card>
+
+  <!-- What is Routing -->
+  <mat-card class="section-card">
+
+    <h2>What is Routing?</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>
+      Routing helps create Single Page Applications (SPA)
+      where different views load dynamically.
+    </p>
+
+    <pre [textContent]="routerLinkExample"></pre>
+
+  </mat-card>
+
+  <!-- Why Routing -->
+  <mat-card class="section-card">
+
+    <h2>Why Routing?</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="features">
+      <mat-chip selected>Navigation Between Pages</mat-chip>
+      <mat-chip selected>Single Page Application</mat-chip>
+      <mat-chip selected>Lazy Loading</mat-chip>
+      <mat-chip selected>Better User Experience</mat-chip>
+    </div>
+
+  </mat-card>
+
+  <!-- Route Configuration -->
+  <mat-card class="section-card">
+
+    <h2>Route Configuration</h2>
+
+    <mat-divider></mat-divider>
+
+    <pre [textContent]="routesExample"></pre>
+
+  </mat-card>
+
+  <!-- Router Outlet -->
+  <mat-card class="section-card">
+
+    <h2>Router Outlet</h2>
+
+    <mat-divider></mat-divider>
+
+    <p>router-outlet is where Angular loads components.</p>
+
+    <pre [textContent]="routerOutletExample"></pre>
+
+  </mat-card>
+
+</div>

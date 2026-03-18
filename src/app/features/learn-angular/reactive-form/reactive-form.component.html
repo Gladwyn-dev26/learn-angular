@@ -1,1 +1,151 @@
-<p>reactive-form works!</p>
+<h2>Angular Reactive Forms</h2>
+
+<div class="page">
+
+  <!-- Hero -->
+  <mat-card class="hero-card">
+    <h1>Reactive Forms in Angular</h1>
+    <p>
+      Reactive Forms provide a model-driven approach to handling form inputs.
+      They give better control over validation, form state, and scalability.
+    </p>
+  </mat-card>
+
+  <!-- Why Reactive Forms -->
+  <mat-card class="section-card">
+
+    <h2>Why Reactive Forms?</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="features">
+
+      <mat-chip selected>Strong Validation</mat-chip>
+      <mat-chip selected>Model Driven</mat-chip>
+      <mat-chip selected>Scalable Forms</mat-chip>
+      <mat-chip selected>Easy Testing</mat-chip>
+
+    </div>
+
+  </mat-card>
+
+
+  <!-- Key Concepts -->
+  <mat-card class="section-card">
+
+    <h2>Key Concepts</h2>
+
+    <mat-divider></mat-divider>
+
+    <div class="features">
+
+      <mat-chip color="primary" selected>FormControl</mat-chip>
+      <mat-chip color="primary" selected>FormGroup</mat-chip>
+      <mat-chip color="primary" selected>FormArray</mat-chip>
+      <mat-chip color="primary" selected>FormBuilder</mat-chip>
+      <mat-chip color="primary" selected>Validators</mat-chip>
+
+    </div>
+
+  </mat-card>
+
+
+  <!-- Implementation -->
+  <mat-card class="section-card">
+
+    <h2>Implementation</h2>
+
+    <mat-divider></mat-divider>
+
+<pre><code>
+import &#123; ReactiveFormsModule &#125; from  '&#64;angular/forms';
+
+&#64;Component(&#123;
+ standalone: true,
+ imports: [ReactiveFormsModule]
+&#125;)
+</code></pre>
+
+  </mat-card>
+
+
+  <!-- Form Example -->
+  <mat-card class="section-card">
+
+    <h2>Reactive Form Example</h2>
+
+    <mat-divider></mat-divider>
+
+<form [formGroup]="userForm">
+
+  <mat-form-field appearance="outline">
+
+    <mat-label>Name</mat-label>
+
+    <input matInput formControlName="name">
+
+  </mat-form-field>
+
+
+  <mat-form-field appearance="outline">
+
+    <mat-label>Email</mat-label>
+
+    <input matInput formControlName="email">
+
+  </mat-form-field>
+
+
+  <button
+  mat-raised-button
+  color="primary"
+  (click)="submit()">
+
+  Submit
+
+  </button>
+
+</form>
+
+  </mat-card>
+
+
+  <!-- Validation Example -->
+  <mat-card class="section-card">
+
+    <h2>Validation Example</h2>
+
+    <mat-divider></mat-divider>
+
+<pre><code>
+userForm = new FormGroup(&#123;
+
+ name: new FormControl('', Validators.required),
+
+ email: new FormControl('', [
+   Validators.required,
+   Validators.email
+ ])
+
+&#125;);
+</code></pre>
+
+  </mat-card>
+
+
+  <!-- Form State -->
+  <mat-card class="section-card">
+
+    <h2>Form State</h2>
+
+    <mat-divider></mat-divider>
+
+    <p><b>Form Value:</b></p>
+
+<pre><code>
+&#123;&#123; userForm.value | json &#125;&#125;
+</code></pre>
+
+  </mat-card>
+
+</div>

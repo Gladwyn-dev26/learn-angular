@@ -1,1 +1,55 @@
-<p>component-tree works!</p>
+<h2>Angular Component Tree</h2>
+
+<div class="page">
+
+  <!-- Hero -->
+  <mat-card class="hero-card">
+    <h1>Angular Component Tree</h1>
+    <p>
+      Angular applications are built using a hierarchy of components.
+      Each component can contain child components forming a tree structure.
+    </p>
+  </mat-card>
+
+  <!-- Component Tree Concept -->
+  <mat-card class="section-card">
+    <h2>Component Hierarchy</h2>
+    <mat-divider></mat-divider>
+
+    <div class="features">
+      <mat-chip selected>AppComponent (Root)</mat-chip>
+      <mat-chip selected>HeaderComponent</mat-chip>
+      <mat-chip selected>SidebarComponent</mat-chip>
+      <mat-chip selected>Feature Components</mat-chip>
+      <mat-chip selected>Child Components</mat-chip>
+    </div>
+  </mat-card>
+
+  <!-- Example Tree -->
+  <mat-card class="section-card">
+    <h2>Example Component Tree</h2>
+    <mat-divider></mat-divider>
+    <pre [textContent]="treeExample"></pre>
+  </mat-card>
+
+  <!-- Data Flow -->
+  <mat-card class="section-card">
+    <h2>Component Communication</h2>
+    <mat-divider></mat-divider>
+    <pre [textContent]="flowExample"></pre>
+  </mat-card>
+
+  <!-- Explanation -->
+  <mat-card class="section-card">
+    <h2>Key Concepts</h2>
+    <mat-divider></mat-divider>
+    <ul>
+      <li><b>Root Component</b> → Starting component of Angular app</li>
+      <li><b>Parent Component</b> → Contains child components</li>
+      <li><b>Child Component</b> → Nested inside parent component</li>
+      <li><b>&#64;Input()</b> → Pass data from parent to child</li>
+      <li><b>&#64;Output()</b> → Send events from child to parent</li>
+    </ul>
+  </mat-card>
+
+</div>

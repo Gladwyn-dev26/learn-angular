@@ -1,0 +1,71 @@
+/* Page Layout */
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px;
+}
+
+
+/* Hero Section */
+.hero-card {
+  padding: 24px;
+  background: #f3f6ff;
+  border-left: 6px solid #3f51b5;
+}
+
+.hero-card h1 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+
+/* Section Cards */
+.section-card {
+  padding: 20px;
+}
+
+
+/* Chips Layout */
+.features {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+
+/* Form Styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 20px;
+  max-width: 400px;
+}
+
+
+/* Code Blocks */
+pre {
+  background: #1e1e1e;
+  color: #00ff9c;
+  padding: 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 14px;
+}
+
+
+/* Improve Code Readability */
+code {
+  font-family: Consolas, monospace;
+  line-height: 1.5;
+}
+
+
+/* Button spacing */
+button {
+  width: fit-content;
+  margin-top: 10px;
+}

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MaterialModule } from '../../material/material.module';
 import { RouterModule } from '@angular/router';
+import { MenuService } from '../../menu.service';
 
 @Component({
   selector: 'app-header',
@@ -10,5 +11,9 @@ import { RouterModule } from '@angular/router';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+ constructor(private menuService: MenuService) {}
 
+  selectMenu(menu: string) {
+    this.menuService.setMenu(menu);
+  }
 }
