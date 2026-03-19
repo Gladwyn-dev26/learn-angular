@@ -1,1 +1,59 @@
-<p>practice works!</p>
+<div class="gemini-container">
+  <header class="chat-header">
+    <div class="brand">Gemini <span class="version">2.5 Flash</span></div>
+  </header>
+
+  <main class="chat-viewport" #messagesContainer>
+    <div class="message-column">
+      @for (msg of messages; track msg) {
+        <div class="message-row" [ngClass]="msg.role">
+          <div class="icon-container">
+            <mat-icon>{{ msg.role === 'user' ? 'account_circle' : 'auto_awesome' }}</mat-icon>
+          </div>
+          <div class="message-body">
+            <div class="sender-label">{{ msg.role === 'user' ? 'You' : 'Gemini' }}</div>
+            <div class="text-content">
+              {{ msg.content }}
+            </div>
+          </div>
+        </div>
+      }
+
+      @if (practiceService.isLoading()) {
+        <div class="message-row bot loading-state">
+          <div class="icon-container">
+            <mat-icon class="shimmer">auto_awesome</mat-icon>
+          </div>
+          <div class="message-body">
+            <div class="sender-label">Gemini</div>
+            <div class="loading-dots">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </main>
+
+  <footer class="input-section">
+    <div class="input-card">
+      <textarea
+        #chatInput
+        [(ngModel)]="userInput"
+        (keydown)="handleKey($event)"
+        placeholder="Enter a prompt here..."
+        rows="1">
+      </textarea>
+      
+      <div class="input-actions">
+        <button 
+          mat-icon-button 
+          (click)="sendMessage()" 
+          [disabled]="!userInput.trim() || practiceService.isLoading()">
+          <mat-icon>send</mat-icon>
+        </button>
+      </div>
+    </div>
+    <p class="disclaimer">Gemini may display inaccurate info, including about people, so double-check its responses.</p>
+  </footer>
+</div>
